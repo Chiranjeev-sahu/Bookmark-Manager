@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookmark Manager</title>
+  <style>
+    .bookmark { margin: 10px; padding: 10px; border: 1px solid #ccc; }
+    .edit-form { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Bookmark Manager</h1>
+  
+  <!-- Add Bookmark Form -->
+  <form id="addForm">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="url" id="url" placeholder="URL" required>
+    <button type="submit">Add</button>
+  </form>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search bookmarks...">
+
+  <!-- Bookmark List -->
+  <div id="bookmarks"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
