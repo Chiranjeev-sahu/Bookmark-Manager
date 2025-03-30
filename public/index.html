@@ -4,7 +4,7 @@
   <title>Bookmark Manager</title>
   <style>
     .bookmark { margin: 10px; padding: 10px; border: 1px solid #ccc; }
-    .edit-form { display: none; }
+    .edit-form { display: none; } /* Hidden by default */
   </style>
 </head>
 <body>
@@ -15,6 +15,14 @@
     <input type="text" id="title" placeholder="Title" required>
     <input type="url" id="url" placeholder="URL" required>
     <button type="submit">Add</button>
+  </form>
+
+  <!-- Edit Bookmark Form (NEW!) -->
+  <form id="editForm" class="edit-form">
+    <input type="text" id="editTitle" placeholder="Title" required>
+    <input type="url" id="editUrl" placeholder="URL" required>
+    <button type="submit">Save Changes</button>
+    <button type="button" id="cancelEdit">Cancel</button>
   </form>
 
   <!-- Search -->
